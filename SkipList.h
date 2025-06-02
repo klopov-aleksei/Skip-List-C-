@@ -108,14 +108,6 @@ private:
             update[i] = current;
         }
 
-        // Check for duplicate insertion
-        if (current->next[0] != tail_ &&
-                !comp_(value, current->next[0]->value.value()) &&
-                !comp_(current->next[0]->value.value(), value))
-        {
-            return iterator(current->next[0]);
-        }
-
         int new_level = random_level();
         skip_list_node* new_node = node_allocator_traits::allocate(alloc_, 1);
         node_allocator_traits::construct(alloc_, new_node, std::forward<U>(value), new_level);
@@ -596,14 +588,6 @@ public:
             update[i] = current;
         }
 
-        // Check for duplicate insertion
-        if (current->next[0] != tail_ &&
-                !comp_(temp, current->next[0]->value.value()) &&
-                !comp_(current->next[0]->value.value(), temp))
-        {
-            return iterator(current->next[0]);
-        }
-
         int new_level = random_level();
         skip_list_node* new_node = node_allocator_traits::allocate(alloc_, 1);
         node_allocator_traits::construct(alloc_, new_node, std::move(temp), new_level);
@@ -666,7 +650,7 @@ public:
         {
             throw std::out_of_range("pop_back called on empty skip_list");
         }
-        erase(--end());
+        erase(iterator(tail_->prev));
     }
 
     /**
