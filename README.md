@@ -9,6 +9,10 @@ st130153@student.spbu.ru
 ## Description
 Skip List in STL style with standard concepts, error handling and complete iterator system.
 
+## Documentation
+open doc/documentation.pdf
+open doc/html/index.html
+
 ## Requirements
 g++, make
 sudo apt-get install libgtest-dev build-essential
