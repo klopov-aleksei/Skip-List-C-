@@ -1,0 +1,288 @@
+\hypertarget{classskip__list}{}\doxysection{skip\+\_\+list$<$ T, Compare, Allocator $>$ Class Template Reference}
+\label{classskip__list}\index{skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}}
+
+
+A skip list container that provides logarithmic time complexity for search operations.  
+
+
+
+
+{\ttfamily \#include $<$Skip\+List.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classskip__list_1_1const__iterator}{const\+\_\+iterator}}
+\begin{DoxyCompactList}\small\item\em Constant bidirectional iterator for \mbox{\hyperlink{classskip__list}{skip\+\_\+list}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classskip__list_1_1iterator}{iterator}}
+\begin{DoxyCompactList}\small\item\em Bidirectional iterator for \mbox{\hyperlink{classskip__list}{skip\+\_\+list}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classskip__list_a398d67ebe81236dbe7b0ed0ce7e6582e}\label{classskip__list_a398d67ebe81236dbe7b0ed0ce7e6582e}} 
+\mbox{\hyperlink{classskip__list_a398d67ebe81236dbe7b0ed0ce7e6582e}{skip\+\_\+list}} (const Compare \&comp=Compare(), const Allocator \&alloc=Allocator())
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a01a774049422e5a22fefa1eee2aa1179}\label{classskip__list_a01a774049422e5a22fefa1eee2aa1179}} 
+\mbox{\hyperlink{classskip__list_a01a774049422e5a22fefa1eee2aa1179}{skip\+\_\+list}} (const Allocator \&alloc)
+\begin{DoxyCompactList}\small\item\em Constructor with allocator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a67804d2e8e6f5c8dacd8650f2de39e80}\label{classskip__list_a67804d2e8e6f5c8dacd8650f2de39e80}} 
+\mbox{\hyperlink{classskip__list_a67804d2e8e6f5c8dacd8650f2de39e80}{skip\+\_\+list}} (const \mbox{\hyperlink{classskip__list}{skip\+\_\+list}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_ae753639dfd683c487a74dcc90d735341}\label{classskip__list_ae753639dfd683c487a74dcc90d735341}} 
+\mbox{\hyperlink{classskip__list_ae753639dfd683c487a74dcc90d735341}{skip\+\_\+list}} (\mbox{\hyperlink{classskip__list}{skip\+\_\+list}} \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_afb216fe7f28c73831101fae17ce73e99}\label{classskip__list_afb216fe7f28c73831101fae17ce73e99}} 
+\mbox{\hyperlink{classskip__list_afb216fe7f28c73831101fae17ce73e99}{$\sim$skip\+\_\+list}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a3a845bd190d144bbd32ffd089b89cda6}\label{classskip__list_a3a845bd190d144bbd32ffd089b89cda6}} 
+\mbox{\hyperlink{classskip__list}{skip\+\_\+list}} \& \mbox{\hyperlink{classskip__list_a3a845bd190d144bbd32ffd089b89cda6}{operator=}} (const \mbox{\hyperlink{classskip__list}{skip\+\_\+list}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a428548d420174191016b6eece2b31709}\label{classskip__list_a428548d420174191016b6eece2b31709}} 
+\mbox{\hyperlink{classskip__list}{skip\+\_\+list}} \& \mbox{\hyperlink{classskip__list_a428548d420174191016b6eece2b31709}{operator=}} (\mbox{\hyperlink{classskip__list}{skip\+\_\+list}} \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a78bfb1a353b6a02584db713fb21233ef}\label{classskip__list_a78bfb1a353b6a02584db713fb21233ef}} 
+Allocator \mbox{\hyperlink{classskip__list_a78bfb1a353b6a02584db713fb21233ef}{get\+\_\+allocator}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns the container\textquotesingle{}s allocator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a34266d4cdcd06076fd5418e24f4f9a16}\label{classskip__list_a34266d4cdcd06076fd5418e24f4f9a16}} 
+bool \mbox{\hyperlink{classskip__list_a34266d4cdcd06076fd5418e24f4f9a16}{empty}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Checks if container is empty. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a1e9f88e2579b48d255740bf494c5f705}\label{classskip__list_a1e9f88e2579b48d255740bf494c5f705}} 
+std\+::size\+\_\+t \mbox{\hyperlink{classskip__list_a1e9f88e2579b48d255740bf494c5f705}{size}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns number of elements. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list_a99159a81647a365128f94b9f90e89fa8}{insert}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Inserts an element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list_a529be545829d07b5edc216dedb94693a}{insert}} (T \&\&value)
+\begin{DoxyCompactList}\small\item\em Inserts an element (move version) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_ac8056e173007a23cbd342e072e660bde}\label{classskip__list_ac8056e173007a23cbd342e072e660bde}} 
+void \mbox{\hyperlink{classskip__list_ac8056e173007a23cbd342e072e660bde}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears all elements from container. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_ac3e742d1d43fe33346e0c1447564e087}\label{classskip__list_ac3e742d1d43fe33346e0c1447564e087}} 
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list_ac3e742d1d43fe33346e0c1447564e087}{erase}} (\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} pos)
+\begin{DoxyCompactList}\small\item\em Erases element at position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classskip__list_a327cee7b29563837a7f3401148c8d325}{swap}} (\mbox{\hyperlink{classskip__list}{skip\+\_\+list}} \&other) noexcept
+\begin{DoxyCompactList}\small\item\em Swaps contents with another \mbox{\hyperlink{classskip__list}{skip\+\_\+list}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_aa76bd99029c300158c64402baa7710a6}\label{classskip__list_aa76bd99029c300158c64402baa7710a6}} 
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list_aa76bd99029c300158c64402baa7710a6}{find}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Finds element with specific value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_aadc0282bfddc68e319f2dec4df30fed9}\label{classskip__list_aadc0282bfddc68e319f2dec4df30fed9}} 
+\mbox{\hyperlink{classskip__list_1_1const__iterator}{const\+\_\+iterator}} \mbox{\hyperlink{classskip__list_aadc0282bfddc68e319f2dec4df30fed9}{find}} (const T \&value) const
+\begin{DoxyCompactList}\small\item\em Finds element with specific value (const version) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classskip__list_a97d4c944c0bcc0cf75d62eea7aed2b09}{contains}} (const T \&value) const
+\begin{DoxyCompactList}\small\item\em Checks if an element exists in the container. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Args$>$ }\\\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list_af6a2447cf5cad5e8635ab193aab22753}{emplace}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Inserts an element using in-\/place construction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list_ae2bedb3611fc832edd0beb083e1fbbd9}{push\+\_\+front}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Inserts an element at the beginning of the container. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list_a6ad25dffef1c094d14313d4a0f91c261}{push\+\_\+back}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Inserts an element at the end of the container. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a71423c1db9f4a4dc37c579ce018ef7bb}\label{classskip__list_a71423c1db9f4a4dc37c579ce018ef7bb}} 
+void \mbox{\hyperlink{classskip__list_a71423c1db9f4a4dc37c579ce018ef7bb}{pop\+\_\+front}} ()
+\begin{DoxyCompactList}\small\item\em Removes the first element from the container. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a8a2e4077132883ec2799ebabdf31b17d}\label{classskip__list_a8a2e4077132883ec2799ebabdf31b17d}} 
+void \mbox{\hyperlink{classskip__list_a8a2e4077132883ec2799ebabdf31b17d}{pop\+\_\+back}} ()
+\begin{DoxyCompactList}\small\item\em Removes the last element from the container. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classskip__list_ae0c75f943e2d24a95c254a8cbcdbc2e9}{resize}} (std\+::size\+\_\+t count, const T \&value=T())
+\begin{DoxyCompactList}\small\item\em Resizes the container to contain count elements. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_adb8d91da6eb18dc784ed3f2ee2b58e81}\label{classskip__list_adb8d91da6eb18dc784ed3f2ee2b58e81}} 
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list_adb8d91da6eb18dc784ed3f2ee2b58e81}{begin}} () noexcept
+\begin{DoxyCompactList}\small\item\em Returns iterator to beginning. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a8f07db553b0f316177aa3075daedcf28}\label{classskip__list_a8f07db553b0f316177aa3075daedcf28}} 
+\mbox{\hyperlink{classskip__list_1_1const__iterator}{const\+\_\+iterator}} \mbox{\hyperlink{classskip__list_a8f07db553b0f316177aa3075daedcf28}{begin}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns const iterator to beginning. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a97e193cc515d691f798565ad802a377d}\label{classskip__list_a97e193cc515d691f798565ad802a377d}} 
+\mbox{\hyperlink{classskip__list_1_1const__iterator}{const\+\_\+iterator}} \mbox{\hyperlink{classskip__list_a97e193cc515d691f798565ad802a377d}{cbegin}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns const iterator to beginning. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a510c6441adac240fb08504bb9d2a7f96}\label{classskip__list_a510c6441adac240fb08504bb9d2a7f96}} 
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list_a510c6441adac240fb08504bb9d2a7f96}{end}} () noexcept
+\begin{DoxyCompactList}\small\item\em Returns iterator to end. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a7dc803e9f2e10b1bce3c59fe37c65f7d}\label{classskip__list_a7dc803e9f2e10b1bce3c59fe37c65f7d}} 
+\mbox{\hyperlink{classskip__list_1_1const__iterator}{const\+\_\+iterator}} \mbox{\hyperlink{classskip__list_a7dc803e9f2e10b1bce3c59fe37c65f7d}{end}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns const iterator to end. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a5f131d0495dd27b97dec722e2984a635}\label{classskip__list_a5f131d0495dd27b97dec722e2984a635}} 
+\mbox{\hyperlink{classskip__list_1_1const__iterator}{const\+\_\+iterator}} \mbox{\hyperlink{classskip__list_a5f131d0495dd27b97dec722e2984a635}{cend}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns const iterator to end. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a64d35a1fa02a89f11712f2af8390b6e6}\label{classskip__list_a64d35a1fa02a89f11712f2af8390b6e6}} 
+bool \mbox{\hyperlink{classskip__list_a64d35a1fa02a89f11712f2af8390b6e6}{operator==}} (const \mbox{\hyperlink{classskip__list}{skip\+\_\+list}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_a209f9a3963127e68914c2bae2bfffe87}\label{classskip__list_a209f9a3963127e68914c2bae2bfffe87}} 
+bool \mbox{\hyperlink{classskip__list_a209f9a3963127e68914c2bae2bfffe87}{operator!=}} (const \mbox{\hyperlink{classskip__list}{skip\+\_\+list}} \&other) const
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T, typename Compare = std\+::less$<$\+T$>$, typename Allocator = std\+::allocator$<$\+T$>$$>$\newline
+class skip\+\_\+list$<$ T, Compare, Allocator $>$}
+
+A skip list container that provides logarithmic time complexity for search operations. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of elements stored in the container. \\
+\hline
+{\em Compare} & Comparison function object type (default\+: std\+::less$<$\+T$>$). \\
+\hline
+{\em Allocator} & Allocator type (default\+: std\+::allocator$<$\+T$>$). \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classskip__list_a97d4c944c0bcc0cf75d62eea7aed2b09}\label{classskip__list_a97d4c944c0bcc0cf75d62eea7aed2b09}} 
+\index{skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}!contains@{contains}}
+\index{contains@{contains}!skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily template$<$typename T , typename Compare  = std\+::less$<$\+T$>$, typename Allocator  = std\+::allocator$<$\+T$>$$>$ \\
+bool \mbox{\hyperlink{classskip__list}{skip\+\_\+list}}$<$ T, Compare, Allocator $>$\+::contains (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if an element exists in the container. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if element exists, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classskip__list_af6a2447cf5cad5e8635ab193aab22753}\label{classskip__list_af6a2447cf5cad5e8635ab193aab22753}} 
+\index{skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}!emplace@{emplace}}
+\index{emplace@{emplace}!skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}}
+\doxysubsubsection{\texorpdfstring{emplace()}{emplace()}}
+{\footnotesize\ttfamily template$<$typename T , typename Compare  = std\+::less$<$\+T$>$, typename Allocator  = std\+::allocator$<$\+T$>$$>$ \\
+template$<$typename... Args$>$ \\
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list}{skip\+\_\+list}}$<$ T, Compare, Allocator $>$\+::emplace (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserts an element using in-\/place construction. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Args} & Argument types for element construction \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Arguments to forward to element constructor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Iterator to the inserted element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classskip__list_a99159a81647a365128f94b9f90e89fa8}\label{classskip__list_a99159a81647a365128f94b9f90e89fa8}} 
+\index{skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}!insert@{insert}}
+\index{insert@{insert}!skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename Compare  = std\+::less$<$\+T$>$, typename Allocator  = std\+::allocator$<$\+T$>$$>$ \\
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list}{skip\+\_\+list}}$<$ T, Compare, Allocator $>$\+::insert (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserts an element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Iterator to the inserted element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classskip__list_a529be545829d07b5edc216dedb94693a}\label{classskip__list_a529be545829d07b5edc216dedb94693a}} 
+\index{skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}!insert@{insert}}
+\index{insert@{insert}!skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename Compare  = std\+::less$<$\+T$>$, typename Allocator  = std\+::allocator$<$\+T$>$$>$ \\
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list}{skip\+\_\+list}}$<$ T, Compare, Allocator $>$\+::insert (\begin{DoxyParamCaption}\item[{T \&\&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserts an element (move version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Iterator to the inserted element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classskip__list_a6ad25dffef1c094d14313d4a0f91c261}\label{classskip__list_a6ad25dffef1c094d14313d4a0f91c261}} 
+\index{skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$typename T , typename Compare  = std\+::less$<$\+T$>$, typename Allocator  = std\+::allocator$<$\+T$>$$>$ \\
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list}{skip\+\_\+list}}$<$ T, Compare, Allocator $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserts an element at the end of the container. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Iterator to the inserted element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classskip__list_ae2bedb3611fc832edd0beb083e1fbbd9}\label{classskip__list_ae2bedb3611fc832edd0beb083e1fbbd9}} 
+\index{skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}!push\_front@{push\_front}}
+\index{push\_front@{push\_front}!skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}}
+\doxysubsubsection{\texorpdfstring{push\_front()}{push\_front()}}
+{\footnotesize\ttfamily template$<$typename T , typename Compare  = std\+::less$<$\+T$>$, typename Allocator  = std\+::allocator$<$\+T$>$$>$ \\
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list}{skip\+\_\+list}}$<$ T, Compare, Allocator $>$\+::push\+\_\+front (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserts an element at the beginning of the container. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Iterator to the inserted element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classskip__list_ae0c75f943e2d24a95c254a8cbcdbc2e9}\label{classskip__list_ae0c75f943e2d24a95c254a8cbcdbc2e9}} 
+\index{skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}!resize@{resize}}
+\index{resize@{resize}!skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily template$<$typename T , typename Compare  = std\+::less$<$\+T$>$, typename Allocator  = std\+::allocator$<$\+T$>$$>$ \\
+void \mbox{\hyperlink{classskip__list}{skip\+\_\+list}}$<$ T, Compare, Allocator $>$\+::resize (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{count,  }\item[{const T \&}]{value = {\ttfamily T()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resizes the container to contain count elements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & New size of the container \\
+\hline
+{\em value} & Value to initialize new elements with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classskip__list_a327cee7b29563837a7f3401148c8d325}\label{classskip__list_a327cee7b29563837a7f3401148c8d325}} 
+\index{skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}!swap@{swap}}
+\index{swap@{swap}!skip\_list$<$ T, Compare, Allocator $>$@{skip\_list$<$ T, Compare, Allocator $>$}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$typename T , typename Compare  = std\+::less$<$\+T$>$, typename Allocator  = std\+::allocator$<$\+T$>$$>$ \\
+void \mbox{\hyperlink{classskip__list}{skip\+\_\+list}}$<$ T, Compare, Allocator $>$\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classskip__list}{skip\+\_\+list}}$<$ T, Compare, Allocator $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Swaps contents with another \mbox{\hyperlink{classskip__list}{skip\+\_\+list}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another \mbox{\hyperlink{classskip__list}{skip\+\_\+list}} to swap with \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Skip\+List.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{classskip__list_1_1iterator}{}\doxysection{skip\+\_\+list$<$ T, Compare, Allocator $>$\+::iterator Class Reference}
+\label{classskip__list_1_1iterator}\index{skip\_list$<$ T, Compare, Allocator $>$::iterator@{skip\_list$<$ T, Compare, Allocator $>$::iterator}}
+
+
+Bidirectional iterator for \mbox{\hyperlink{classskip__list}{skip\+\_\+list}}.  
+
+
+
+
+{\ttfamily \#include $<$Skip\+List.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classskip__list_1_1iterator_a11fa41f534ad209ce4ab12d5cd450e8d}\label{classskip__list_1_1iterator_a11fa41f534ad209ce4ab12d5cd450e8d}} 
+using {\bfseries iterator\+\_\+category} = std\+::bidirectional\+\_\+iterator\+\_\+tag
+\item 
+\mbox{\Hypertarget{classskip__list_1_1iterator_a6d132c33bd94f2821fa28ea5a88238a9}\label{classskip__list_1_1iterator_a6d132c33bd94f2821fa28ea5a88238a9}} 
+using {\bfseries value\+\_\+type} = T
+\item 
+\mbox{\Hypertarget{classskip__list_1_1iterator_a1023c00ab26a456a36704e8fc6fa7bb7}\label{classskip__list_1_1iterator_a1023c00ab26a456a36704e8fc6fa7bb7}} 
+using {\bfseries difference\+\_\+type} = std\+::ptrdiff\+\_\+t
+\item 
+\mbox{\Hypertarget{classskip__list_1_1iterator_a3a26e39e5dad86efedddaa73bc1f84aa}\label{classskip__list_1_1iterator_a3a26e39e5dad86efedddaa73bc1f84aa}} 
+using {\bfseries pointer} = T $\ast$
+\item 
+\mbox{\Hypertarget{classskip__list_1_1iterator_a1185e4da01a4b7f7f7d4a924424760cc}\label{classskip__list_1_1iterator_a1185e4da01a4b7f7f7d4a924424760cc}} 
+using {\bfseries reference} = T \&
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classskip__list_1_1iterator_ac4590e34797febad2790b063d4251ee4}\label{classskip__list_1_1iterator_ac4590e34797febad2790b063d4251ee4}} 
+{\bfseries iterator} (skip\+\_\+list\+\_\+node $\ast$node)
+\item 
+\mbox{\Hypertarget{classskip__list_1_1iterator_a9ecb42d4a11fb5d2d7e0e9f3e1079bd6}\label{classskip__list_1_1iterator_a9ecb42d4a11fb5d2d7e0e9f3e1079bd6}} 
+reference \mbox{\hyperlink{classskip__list_1_1iterator_a9ecb42d4a11fb5d2d7e0e9f3e1079bd6}{operator$\ast$}} () const
+\begin{DoxyCompactList}\small\item\em Dereference operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_1_1iterator_ae678d73f1d5b5e2c8cf684cda9f9dd90}\label{classskip__list_1_1iterator_ae678d73f1d5b5e2c8cf684cda9f9dd90}} 
+pointer \mbox{\hyperlink{classskip__list_1_1iterator_ae678d73f1d5b5e2c8cf684cda9f9dd90}{operator-\/$>$}} () const
+\begin{DoxyCompactList}\small\item\em Member access operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_1_1iterator_a94580f981d3ca4911d8c99773249caf1}\label{classskip__list_1_1iterator_a94580f981d3ca4911d8c99773249caf1}} 
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \& \mbox{\hyperlink{classskip__list_1_1iterator_a94580f981d3ca4911d8c99773249caf1}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Prefix increment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_1_1iterator_a2e140527e0bd8829cea50cc3e8310b5c}\label{classskip__list_1_1iterator_a2e140527e0bd8829cea50cc3e8310b5c}} 
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list_1_1iterator_a2e140527e0bd8829cea50cc3e8310b5c}{operator++}} (int)
+\begin{DoxyCompactList}\small\item\em Postfix increment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_1_1iterator_a1516b2d09d884287b3bcce40e1e3d044}\label{classskip__list_1_1iterator_a1516b2d09d884287b3bcce40e1e3d044}} 
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \& \mbox{\hyperlink{classskip__list_1_1iterator_a1516b2d09d884287b3bcce40e1e3d044}{operator-\/-\/}} ()
+\begin{DoxyCompactList}\small\item\em Prefix decrement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_1_1iterator_ac963aa5091c79de5751f9fb622d52e92}\label{classskip__list_1_1iterator_ac963aa5091c79de5751f9fb622d52e92}} 
+\mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \mbox{\hyperlink{classskip__list_1_1iterator_ac963aa5091c79de5751f9fb622d52e92}{operator-\/-\/}} (int)
+\begin{DoxyCompactList}\small\item\em Postfix decrement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_1_1iterator_af44120e1d3a63c565e67eb6adf13c524}\label{classskip__list_1_1iterator_af44120e1d3a63c565e67eb6adf13c524}} 
+bool \mbox{\hyperlink{classskip__list_1_1iterator_af44120e1d3a63c565e67eb6adf13c524}{operator==}} (const \mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality comparison. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskip__list_1_1iterator_a48b4c052beeaf45e1a3757aa2b05a098}\label{classskip__list_1_1iterator_a48b4c052beeaf45e1a3757aa2b05a098}} 
+bool \mbox{\hyperlink{classskip__list_1_1iterator_a48b4c052beeaf45e1a3757aa2b05a098}{operator!=}} (const \mbox{\hyperlink{classskip__list_1_1iterator}{iterator}} \&other) const
+\begin{DoxyCompactList}\small\item\em Inequality comparison. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classskip__list_1_1iterator_a8c802e1217dc6486b245042e471dd2d2}\label{classskip__list_1_1iterator_a8c802e1217dc6486b245042e471dd2d2}} 
+class {\bfseries skip\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T, typename Compare = std\+::less$<$\+T$>$, typename Allocator = std\+::allocator$<$\+T$>$$>$\newline
+class skip\+\_\+list$<$ T, Compare, Allocator $>$\+::iterator}
+
+Bidirectional iterator for \mbox{\hyperlink{classskip__list}{skip\+\_\+list}}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Skip\+List.\+h\end{DoxyCompactItemize}
