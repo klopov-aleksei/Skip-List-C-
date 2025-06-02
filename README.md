@@ -7,7 +7,7 @@
 st130153@student.spbu.ru
 
 ## Description
-Skip List in STL style with standard concepts, error handling and complete iterator system. 
+Skip List in STL style with standard concepts, error handling and complete iterator system.
 
 ## Requirements
 g++, make
