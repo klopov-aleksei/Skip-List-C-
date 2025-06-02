@@ -7,7 +7,7 @@
 st130153@student.spbu.ru
 
 ## Description
-Performed Google tests using classes and class templates. Partial specializations with int and double types are provided.
+Skip List in STL style with standard concepts, error handling and complete iterator system. 
 
 ## Requirements
 g++, make
