@@ -318,3 +318,9 @@ TEST_F(SkipListTest, PopEmpty)
     EXPECT_THROW(sl.pop_front(), std::out_of_range);
     EXPECT_THROW(sl.pop_back(), std::out_of_range);
 }
+
+int main(int argc, char **argv)
+{
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+}

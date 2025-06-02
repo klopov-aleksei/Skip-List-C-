@@ -10,7 +10,7 @@ all: $(TARGET)
 $(TARGET): SkipList.h $(TEST_SRCS)
 	$(CXX) $(CXXFLAGS) -o $@ $(TEST_SRCS) $(LDFLAGS)
 
-run_tests: $(TARGET)
+test: $(TARGET)
 	./$(TARGET)
 
 clean:
