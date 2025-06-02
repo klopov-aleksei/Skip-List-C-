@@ -1,0 +1,66 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Build directories
+build/
+bin/
+obj/
+Debug/
+Release/
+*.dSYM/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# IDE specific files
+.vscode/
+*.user
+*.sublime-workspace
+*.sublime-project
+
+# Miscellaneous
+*.log
+*.csv
+*.xml
+*.json
+*.map
+*.pid
+*.stackdump
+*.class
+*.jar
+*.pyc
+*.pdb
+*.idb
+*.ilk
+*.exp
+*.map
+*.d
+*.mod
+*.smod
+*.txt
+
+# Ignore all files in the following directories
+*.DS_Store
+*.Thumbs.db
